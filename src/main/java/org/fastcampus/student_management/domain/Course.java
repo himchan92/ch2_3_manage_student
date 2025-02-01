@@ -20,7 +20,7 @@ public class Course {
   }
 
   public void changeFee(int fee) {
-    this.changeFee(fee);
+    this.fee.changeFee(fee);
   }
 
   public String getCourseName() {

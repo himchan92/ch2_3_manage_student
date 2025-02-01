@@ -20,4 +20,6 @@ public class CourseFee {
     public int getFee() {
         return fee;
     }
+
+
 }
