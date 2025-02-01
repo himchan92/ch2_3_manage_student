@@ -6,6 +6,7 @@ public class Student {
   private final int age;
   private final String address;
   private boolean activated;
+  private int fee;
 
   public Student(String name, int age, String address) {
     if (name == null || name.isEmpty()) {
@@ -16,6 +17,22 @@ public class Student {
     this.age = age;
     this.address = address;
     this.activated = true;
+  }
+
+  public void activate() {
+    if(this.activated) {
+      throw new IllegalArgumentException();
+    }
+
+    this.activated = true;
+  }
+
+  public void deactive() {
+    if(!this.activated) {
+      throw new IllegalArgumentException();
+    }
+
+    this.activated = false;
   }
 
   public String getName() {

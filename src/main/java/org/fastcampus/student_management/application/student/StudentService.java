@@ -24,9 +24,14 @@ public class StudentService {
 
   public void activateStudent(String name) {
     // TODO: 과제 구현 부분
+    Student student = getStudent(name); //파라미터 학생정보가져오기
+    //상태변경 메소드 호출 : 메소드명이 무슨 역할인지 명시되있고 가독성있어 권장
+    student.activate();
   }
 
   public void deactivateStudent(String name) {
     // TODO: 과제 구현 부분
+    Student student = getStudent(name);
+    student.deactive();
   }
 }
